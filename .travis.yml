@@ -21,3 +21,13 @@ after_success:
   - docker push jnlee1102/docker-frontend
   - docker push jnlee1102/docker-backend
   - docker push jnlee1102/docker-nginx
+
+# deploy:
+#   provider: elasticbeanstalk
+#   region: "ap-northeast-2"
+#   app: "docker-fullstack-2"
+#   evn: "Dockerfullstack2-env"
+#   bucket_name: elasticbeanstalk-ap-northeast-2-250058502806
+#   bucket_path: "docker-fullstack-2"
+#   on:
+#     branch: master
